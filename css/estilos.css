@@ -1,0 +1,1128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* corpo */
+body{
+    background-color: white;
+}
+
+/* menu */
+.logo{
+    margin-top: 8px;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+header{
+    width: 1024px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: solid 2px #A6A6A6;
+}
+
+
+
+nav a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+    color: #2F6A9F;
+}
+
+nav a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+ul{
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+/* Introdução */
+#introducao{
+    width: 1024px;
+    
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+
+    margin-top:100px;
+    margin-bottom: 100px;
+    height: 500px;
+}
+
+/* ANIMAÇÃO */
+@keyframes blinkcursor{
+    from{
+        border-right-color: black;
+    }
+
+    to{
+        border-right-color: transparent;
+    }
+    
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 9,5em;
+    }
+}
+
+.meunome{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+
+    border-right: 1px solid black;
+    width: 490px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    /* Animação */
+    animation: blinkcursor 500ms infinite normal, typing 1s steps(40) 1s normal both;
+}
+
+.apresentacao{
+    width: 1024px;
+    font-size: 39px;  
+
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+}
+
+#introducao img{ width: 300px;}
+
+
+
+
+
+
+/* SOBRE MIM */
+#sobremim{
+    width: 100%;
+    height: 600px;
+    background-color: #77ABDB;
+    
+    padding-top: 80px;
+}
+
+#sobremim h2{
+    text-align: center;
+    color: azure;
+    font-size: 60px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+}
+
+.informacaosobremim{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 800px;
+}
+
+.textosobremim{
+    font-size: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-left:  20px;
+    
+}
+
+#sobremim img{
+    width: 45%;
+    margin-top: 80px;
+    margin-right: 30px;
+}
+
+
+
+
+/* PORTFÓLIO */
+#portfolio{
+    width: 1024px;
+    height: 750px;
+    margin: auto;
+}
+
+.desenhopc{
+    padding-top: 8px;
+    padding-left: 260px;
+}
+
+.setagif{
+    text-align: right;
+}
+
+#portfolio h2{
+    font-size: 60px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+    margin-top: 80px;
+}
+
+/* botão portfólio */
+#portfolio a{
+    text-decoration: none;
+    color: #2F6A9F;
+    margin-top: 5px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botaomeusconhecimentos{
+    font-size: 23px;
+    font-family: 'Laila', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-color: #eeeeee;
+    border: solid 1px #2F6A9F;
+    
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 9px;
+}
+
+
+#portfolio a:hover{
+    color: white;
+    transition: 1s;
+}
+
+.botaomeusconhecimentos:hover{
+    background-color: #2F6A9F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEUS CONHECIMENTOS */
+#meusconhecimentos h1{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 31px;
+}
+
+#frontend h2{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#frontend{
+    color: #4d85b9;
+    font-size: 31px;
+    margin-top: 80px;
+    height: 600px;
+
+    border: solid 1px black;
+    width: 1024px;
+    height: 750px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.codigos{
+    color: black;
+    width: 950px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tituloscodigos{
+    font-size: 27px;
+    padding-bottom: 35px;
+    
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+}
+
+.html{
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+}
+
+
+.css{  
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+}
+
+.botaofrontend a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Laila', sans-serif;
+    font-weight: 400;
+}
+
+.botaofrontend{
+    text-align: center;
+    margin-top: 240px;
+    margin-bottom: 120px;
+}
+
+.botaofrontend button{
+    padding: 15px 25px;
+    border: solid 1.5px black;
+    background-color: #77ABDB;
+    border-radius: 50px;
+    color: black;
+    font-size: 17px;
+}
+
+
+/* DESIGN COLUNA 1 */
+
+/* titulo e subtitulo */
+
+
+.titulo{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 27px;
+    border-left: 20px;
+    margin-top: 150px ;
+    margin-bottom: 30px;
+    text-align: center;  
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 37px;
+    font-family: 'Mali', cursive;
+    font-weight: 500;
+}
+
+.subtitulotextos{
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.textosdesign{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+}
+
+.designcoluna1{
+    color: black;
+    width: 1024px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.figma{
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.photoshop{
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+button{
+    margin-top: 30px;
+    padding: 15px 15px;
+    border: solid 1.5px black;
+    background-color: #fcfcfc;
+    color: rgb(0, 0, 0);
+
+    font-size: 17px;
+    border-radius: 25px;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+  
+    font-family: 'Laila', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+
+/* DESIGN COLUNA 2 */
+.designcoluna2{
+    color: black;
+    width: 1024px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.illustrator{
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 140px;
+}
+
+.premiere{
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 140px;
+}
+
+
+
+
+/* MEUS PROJETOS SITES */
+/* coluna 1 */
+.titulomeusprojetos{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 38px;
+    text-align: center; 
+    margin-bottom: 70px;
+    margin-top: 250px;
+}
+
+#sitescoluna1{
+    width: 1024px;
+    height: 800px;
+    margin: auto;
+   
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#sitescoluna1 h3{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#sitescoluna2 h3{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+
+    margin-top: 65px;
+} 
+
+#sitescoluna1 p{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+}
+
+#sitescoluna2 p{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+}
+
+#sitescoluna1 button a{
+    text-decoration: none;
+    color: black;
+}
+
+#sitescoluna1 button{
+    border-radius: 1px;
+}
+
+#sitescoluna1 button:hover{
+    background-color: #6e96be;
+    transition: 0.5s;
+}
+
+/* SIMPLICITY */
+.simplicity{
+    width: 400px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.simplicity img{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+/* ASTROVISION */
+.astrovision{
+    width: 400px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.astrovision img{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+/* COLUNA 2 */
+#sitescoluna2{
+    width: 1024px;
+    height: 950px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#sitescoluna2 button a{
+    text-decoration: none;
+    color: black;
+}
+
+#sitescoluna2 button{
+    border-radius: 1px;
+}
+
+#sitescoluna2 button:hover{
+    background-color: #6e96be;
+    transition: 0.5s;
+}
+
+/* FOTOMAX */
+.fotomax{
+    width: 400px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.fotomax img{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+/* VIAJEBEM */
+.viajebem{
+    width: 400px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.viajebem img{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+/* RODAPÉ */
+footer{
+    width: 100%;
+    height: 600px;
+   
+    background-color: #6e96be;
+    border-top: solid 1px black;
+    margin: auto;
+}
+
+/* MEUS CONTATOS */
+.contato h3{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight: 400;
+}
+
+.contato{
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+.meuscontatos{
+    width: 512px;
+    margin: auto;
+}
+
+.meuemail{
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+.meuemail a{
+    text-decoration: none;
+    color: black;
+    padding-top: 12px;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.redessociais img{
+    width: 60px;
+}
+
+.redessociais img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* ENTRE EM CONTATO */
+.entreemcontato{
+    width: 512px;
+    margin: auto;
+}
+
+input{
+    background-color:#d8e5f1;
+    border: solid 1px black;
+    font-size: 20px;
+    width: 274px;
+    height: 78px;  
+}
+
+textarea{
+    background-color:#d8e5f1;
+    color: black;
+    border: solid 1px black;
+    font-size: 20px;
+    width: 274px;
+    height: 200px;
+}
+
+
+.botaoform{
+    text-decoration: none;
+    background-color: #2F6A9F;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 4px;
+    margin-left: 200px;
+}
+
+.botaoform:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.desenvolvido{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 767px){
+
+    /* cabeçalho */
+
+    header{
+        width: 444px;
+    }
+
+    nav a{
+        font-size: 19px;
+    }
+
+    ul{
+        width: 265px;
+    }
+
+
+    /* introdução */
+    #introducao{
+        width: 444px;
+        height: 500px;
+        display: flex; 
+        flex-direction: column;
+        margin: auto;
+        margin-top:100px;
+        margin-bottom: 100px;   
+    }
+
+    .meunome{
+        font-size: 50px;
+        width: 444px;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .apresentacao{
+        width: 444px;
+        font-size: 30px;  
+        padding-bottom: 50px;
+    }
+    
+    #introducao img{ width: 300px;}
+
+
+    /* Sobre mim */
+    #sobremim{
+        width: 100%;
+        height: 800px;        
+    }
+    
+    #sobremim h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .informacaosobremim{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 444px;
+    }
+    
+    .textosobremim{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 60px;     
+    }
+    
+    #sobremim img{
+        width: 70%;
+        margin: auto;
+        margin-top: 70px;
+    }
+
+    /* Portfólio */
+    #portfolio{
+        width: 444px;
+        height: 690px;
+        margin: auto;
+    }
+    
+    .desenhopc{
+        padding: 1%;
+        margin-bottom: 30px;
+    }
+
+    .setagif{
+        text-align: right;
+    }
+    
+    #portfolio h2{
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    .botaomeusconhecimentos{
+        width: 400px;
+        padding: 20px 0px;
+        font-size: 20px;
+        text-align: center; 
+        margin: auto;
+    }
+    
+    /* RODAPÉ */
+    footer{
+        width: 100%;
+        height: 900px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    /* MEUS CONTATOS */
+    .contato h3{
+        text-align: center;
+        font-family: 'Mukta Vaani', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .contato{
+        width: 300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    
+
+    .redessociais{
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+        padding-top: 30px;
+        padding-left: 45px;
+        margin-bottom: 70px;
+    }
+
+    .entreemcontato h3{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .entreemcontato{
+        width: 400px;
+        margin: auto;
+    }
+
+    .desenvolvido{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 80px;
+    }
+    
+
+    /* MINHAS HABILIDADES */
+    #meusconhecimentos h1{
+        font-size: 30px;
+    }
+    
+    #frontend h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    #frontend{
+        font-size: 31px;
+        margin-top: 80px;
+        width: 444px;
+        height: 1290px;
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .codigos{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tituloscodigos{
+        font-size: 24px;
+        padding-bottom: 35px;
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        font-weight: 600;
+    }
+    
+    .html{
+        width: 400px;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Mukta Vaani', sans-serif;
+        font-weight: 400;
+        border-bottom: solid 1px black;
+        padding-bottom: 30px;
+    }
+    
+    
+    .css{  
+        width: 400px;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Mukta Vaani', sans-serif;
+        font-weight: 400;
+    }
+    
+    .botaofrontend a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Laila', sans-serif;
+        font-weight: 400;
+    }
+    
+    .botaofrontend{
+        margin-top: 850px;
+        margin-bottom: 120px;
+    }
+
+
+    /* DESIGN */
+    .titulo{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 500;
+        font-size: 25px;
+        border-left: 20px;
+        margin-top: 100px ;
+        margin-bottom: 30px;
+        text-align: center;  
+    }
+    
+    .subtitulo{
+        text-align: center;
+        font-size: 31px;
+        font-family: 'Mali', cursive;
+        font-weight: 500;
+    }
+    
+    .subtitulotextos{
+        font-family: 'Ysabeau', sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+    }
+    
+    .textosdesign{
+        font-family: 'Mukta Vaani', sans-serif;
+        font-weight: 400;
+    }
+    
+    .designcoluna1{
+        color: black;
+        width: 400px;
+        height: 1300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .figma{
+        width: 400px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 90px;
+    }
+    
+    .photoshop{
+        width: 400px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 90px;
+    }
+    
+    button{
+        margin-top: 30px;
+        padding: 10px 10px;
+        border: solid 1.5px black;
+        background-color: #afd0f0;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    
+    button a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: 'Laila', sans-serif;
+        font-weight: 400;
+    }
+    
+
+    /* Coluna 2 design */
+    .designcoluna2{
+        color: black;
+        width: 400px;
+        height: 1300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .illustrator{
+        width: 400px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 90px;
+    }
+    
+    .premiere{
+        width: 400px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 90px;
+        padding-bottom: 30px;
+        border-bottom: solid 1px rgb(168, 168, 168);
+    }
+    
+
+
+    /* MEUS SITES */
+    .titulomeusprojetos{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center; 
+        margin-top: 115px;
+    }
+    
+    #sitescoluna1{
+        width: 444px;
+        height: 1300px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sitescoluna1 h3{
+        font-family: 'Mukta Vaani', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    #sitescoluna2 h3{
+        font-family: 'Mukta Vaani', sans-serif;
+        font-weight: 400;
+        font-size: 30px;      
+    } 
+    
+    #sitescoluna1 p{
+        font-size: 19px;
+        font-family: 'Mukta Vaani', sans-serif;
+        font-weight: 400;
+    }
+    
+     #sitescoluna2 p{
+        font-size: 18px;
+        font-family: 'Mukta Vaani', sans-serif;
+        font-weight: 400;
+    }
+
+    
+    /* SIMPLICITY */
+   
+
+    .simplicity{
+        width: 400px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .simplicity img{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    
+    /* ASTROVISION */
+    .astrovision{
+        width: 400px;
+        font-size: 20px;
+        padding-top: 50px;
+    }
+    
+    .astrovision img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    
+    /* COLUNA 2 */
+    #sitescoluna2{
+        width: 444px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sitescoluna2 button a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #sitescoluna2 button{
+        border-radius: 1px;
+    }
+
+    .btnviajebem{
+        margin-bottom: 50px;
+    }
+    
+    #sitescoluna2 button:hover{
+        background-color: #6e96be;
+    }
+    
+    /* FOTOMAX */
+    .fotomax{
+        margin-top: 240px;
+        width: 400px;
+        font-size: 20px;
+    }
+    
+    .fotomax img{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    
+    /* VIAJEBEM */
+    .viajebem{
+        width: 400px;
+        font-size: 20px;
+    }
+    
+    .viajebem img{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+   
+
+
+
